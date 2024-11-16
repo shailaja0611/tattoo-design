@@ -1,0 +1,104 @@
+/* Basic styling for the page container */
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling for the header */
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 64px;
+  }
+  
+  .header p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Artist grid layout */
+  .artist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  /* Card layout */
+  .artist-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image container */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /* Image styles */
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .image-container:hover img {
+    transform: scale(1);
+  }
+  
+  /* Overlay for the name and icons */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Show overlay on hover */
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Artist name style */
+  .overlay h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Icons style */
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .icons span {
+    font-size: 28px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  /* Icon hover effect */
+  .icons span:hover {
+    color: #f39c12;
+  }
+  
